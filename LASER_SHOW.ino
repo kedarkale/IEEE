@@ -14,61 +14,7 @@ void setup() {
   microstep(8);
 }
 
-void box0()
-{
-  microstep(16);
-  d = 100;
 
-  stepX(-20);
-  stepY(-20);
-  laser_on();
-  stepX(40);
-  stepY(40);
-  stepX(-40);
-  stepY(-40);
-  laser_off();
-
-  stepX(20);
-  stepY(20);
-
-}
-void face()
-{
-  microstep(8);
-  d = 750;
-  laser_on();
-  stepX(5);
-  stepY(5);
-  stepX(-5);
-  stepY(-5);
-  laser_off();
-  //stepY();
-  stepX(10);
-  laser_on();
-  stepX(5);
-  stepY(5);
-  stepX(-5);
-  stepY(-5);
-  laser_off();
-  stepX(-2);
-  laser_on();
-  stepY(-4);
-  laser_off();
-  stepY(-3);
-  stepX(-4);
-  laser_on();
-  stepX(7);
-  stepX(-7);
-  laser_off();
-  stepY(7);
-
-  stepX(-4);
-
-  ///stepY(10);
-  laser_off();
-
-
-}
 void loop() {
   // put your main code here, to run repeatedly:
 
@@ -145,7 +91,60 @@ void loop() {
 
 }
 
+void box0()
+{
+  microstep(16);
+  d = 100;
 
+  stepX(-20);
+  stepY(-20);
+  laser_on();
+  stepX(40);
+  stepY(40);
+  stepX(-40);
+  stepY(-40);
+  laser_off();
+
+  stepX(20);
+  stepY(20);
+
+}
+void face()
+{
+  microstep(8);
+  d = 750;
+  laser_on();
+  stepX(5);
+  stepY(5);
+  stepX(-5);
+  stepY(-5);
+  laser_off();
+  //stepY();
+  stepX(10);
+  laser_on();
+  stepX(5);
+  stepY(5);
+  stepX(-5);
+  stepY(-5);
+  laser_off();
+  stepX(-2);
+  laser_on();
+  stepY(-4);
+  laser_off();
+  stepY(-3);
+  stepX(-4);
+  laser_on();
+  stepX(7);
+  stepX(-7);
+  laser_off();
+  stepY(7);
+
+  stepX(-4);
+
+  ///stepY(10);
+  laser_off();
+
+}
 
 void I ()
 {
